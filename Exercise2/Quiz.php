@@ -16,12 +16,12 @@ $questions = array("language", "country", "notAsia", "structure", "continent");
 $answers = array("English","Russia","Maldova","Michigan's First Lighthouse","Asia");
 
 
-
-
+// Quiz Results
 echo "<h1>Quiz results</h1>";
 
 for ($i = 0; $i < $total; $i++)
 {
+  // check if user chose an answer and record response
   $yourAnswer = isset($_POST[$questions[$i]]) ? $_POST[$questions[$i]] : "";
 
   // display question, user's answers, and correct answer
@@ -33,6 +33,7 @@ for ($i = 0; $i < $total; $i++)
   if ($yourAnswer == $answers[$i]) {$yourScore++;}
 }
 
+// final quiz score as a percentage
 echo "Your score: " . ($yourScore / $total * 100) . "%";
 
 ?>

@@ -3,12 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Andrew's Store</title>
-    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
 
+    <form action="customerBackend.php" onsubmit="checkForm()" method="post">
 
-     <script src="myscripts.js"></script>
+      <!-- Account -->
+      <div class="account">
+        <div class="section-header">Your account</div><br>
+
+        <label for="email">Eamil Address</label><br>
+        <input type="text" id="email" name="email" required>
+        <label for="email" class="email-error">Invalid email address!</label><br><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required> <br><br>
+      </div>
+
+
+      <!-- Shipping -->
+      <div class="shipping">
+        <div class="section-header">Shipping</div><br>
+
+        <input type="radio" id="free" name="shipping" value"Free (7 days)" required>
+        <label for="free">Free (7 days)</label> <br>
+
+        <input type="radio" id="threeDay" name="shipping" value"$5.00 three day" required>
+        <label for="threeDay">$5.00 three day</label> <br>
+
+        <input type="radio" id="overnight" name="shipping" value"$50.00 overnight" required>
+        <label for="overnight">$50.00 overnight</label> <br><br>
+
+        </div>
+      </div>
+
+
+      <!-- reset button -->
+      <button type="button" id="clear" name="clear">Reset</button>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+
+
+
+     <script src="formChecker.js"></script>
 
   </body>
 </html>

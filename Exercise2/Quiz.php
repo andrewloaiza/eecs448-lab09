@@ -7,12 +7,17 @@ echo "<link href='styles.css' rel='stylesheet' type='text/css'/>";
 $yourScore = 0;
 $total = 5;
 
+// question prompts
 $questionPrompts = array("Question 1: What is the most spoken language in the world?",
                          "Question 2: What is the largest country in the world?",
                          "Question 3: Which of the following countries is NOT in Asia?",
                          "Question 4: Which of the following is the oldest?",
                          "Question 5: What is the largest continent by land area?");
+
+// user's answers
 $questions = array("language", "country", "notAsia", "structure", "continent");
+
+// answer key
 $answers = array("English","Russia","Maldova","Michigan's First Lighthouse","Asia");
 
 

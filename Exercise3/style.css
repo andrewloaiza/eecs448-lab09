@@ -1,11 +1,101 @@
+h1
+{
+  text-transform: uppercase;
+}
+
 .section-header
 {
   font-weight: bold;
   font-size: 16pt;
 }
 
+img
+{
+  max-width: 250px;
+  max-height: 250px;
+}
+
+table, tr, th, td
+{
+  border: 1px solid black;
+  width: auto;
+  text-align: left;
+}
+
 .email-error
 {
-  visibility: hidden;
+  display: none;
   color: red;
+}
+
+.shopping
+{
+  padding-bottom: 25px;
+  background: #E7E7E7;
+}
+
+.account
+{
+  padding: 25px 0;
+  background: #D5D5D5;
+}
+
+.shipping
+{
+  padding-top: 25px;
+  margin-bottom: 10px;
+  background: #E7E7E7;
+}
+
+header
+{
+  /* position: relative; */
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20pt;
+  margin: 20px 0 50px 0;
+}
+
+.company-name
+{
+  position: absolute;
+  left: 20px;
+}
+
+.receipt
+{
+  position: absolute;
+  right: 20px;
+  text-transform: uppercase;
+}
+
+.body
+{
+  font-size: 12pt;
+  margin: 0 20px;
+}
+
+.address
+{
+  margin-bottom: 40px;
+}
+
+.receiptTable
+{
+  margin-top: 50px;
+  width: 100%;
+  empty-cells: hide;
+  line-height: 20px;
+}
+
+.receiptTable th
+{
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #E7E7E7;
+}
+
+.receiptTable td
+{
+  text-align: center;
 }
